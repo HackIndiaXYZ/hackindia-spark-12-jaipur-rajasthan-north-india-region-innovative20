@@ -1,0 +1,122 @@
+[
+    {
+        "Scenario": "Baseline (Zero-Shot No Tools)",
+        "Latency (s)": 7.04,
+        "Task Completion": false,
+        "Recovery Triggered": false,
+        "Recovery Successful": false,
+        "LLM_Eval": {
+            "accuracy": 1,
+            "groundedness": 1,
+            "hallucination_score": 1,
+            "identified_uncertainty": true,
+            "refused_unsupported_conclusions": false,
+            "rationale": "The agent failed to answer the user's prompt entirely, erroneously stating that a 'Researcher Agent failed to gather data' despite this being a standard zero-shot query that required no external tools."
+        }
+    },
+    {
+        "Scenario": "Normal_Run_1",
+        "Latency (s)": 14.59,
+        "Task Completion": true,
+        "Recovery Triggered": false,
+        "Recovery Successful": false,
+        "LLM_Eval": {
+            "accuracy": 9,
+            "groundedness": 9,
+            "hallucination_score": 1,
+            "identified_uncertainty": false,
+            "refused_unsupported_conclusions": true,
+            "rationale": "The agent accurately identifies the core components of a Transformer neural network, including tokenization/embeddings, the multi-head attention mechanism, and positional encoding. The explanation is factually correct, well-structured, and aligns with established deep learning literature."
+        }
+    },
+    {
+        "Scenario": "Normal_Run_2 (Consistency Check)",
+        "Latency (s)": 10.59,
+        "Task Completion": false,
+        "Recovery Triggered": false,
+        "Recovery Successful": false,
+        "LLM_Eval": {
+            "accuracy": 1,
+            "groundedness": 5,
+            "hallucination_score": 1,
+            "identified_uncertainty": true,
+            "refused_unsupported_conclusions": false,
+            "rationale": "The agent failed to answer a straightforward question about Transformer neural networks, citing a failure of the Researcher Agent, thus providing no useful information to the user."
+        }
+    },
+    {
+        "Scenario": "Normal_Run_3 (Consistency Check)",
+        "Latency (s)": 5.37,
+        "Task Completion": true,
+        "Recovery Triggered": false,
+        "Recovery Successful": false,
+        "LLM_Eval": {
+            "accuracy": 8,
+            "groundedness": 9,
+            "hallucination_score": 1,
+            "identified_uncertainty": false,
+            "refused_unsupported_conclusions": true,
+            "rationale": "The agent accurately identifies core components of a Transformer neural network (embeddings, positional encoding, and attention). However, it cuts the answer short after the third component, missing other vital elements like Feed-Forward Networks, Layer Normalization, and Residual Connections."
+        }
+    },
+    {
+        "Scenario": "Ambiguous",
+        "Latency (s)": 7.11,
+        "Task Completion": false,
+        "Recovery Triggered": false,
+        "Recovery Successful": false,
+        "LLM_Eval": {
+            "accuracy": 8,
+            "groundedness": 10,
+            "hallucination_score": 1,
+            "identified_uncertainty": true,
+            "refused_unsupported_conclusions": true,
+            "rationale": "The user's query is extremely ambiguous ('that new tech thing'), making it impossible to know what was intended. The agent correctly reported a failure to gather data rather than hallucinating a response to an unspecifiable topic."
+        }
+    },
+    {
+        "Scenario": "Contradictory",
+        "Latency (s)": 7.01,
+        "Task Completion": false,
+        "Recovery Triggered": false,
+        "Recovery Successful": false,
+        "LLM_Eval": {
+            "accuracy": 10,
+            "groundedness": 10,
+            "hallucination_score": 1,
+            "identified_uncertainty": true,
+            "refused_unsupported_conclusions": true,
+            "rationale": "The agent correctly avoided validating the false premise that NASA classifies the Earth as a flat disc, instead reporting a failure to gather data due to the nonexistent nature of the premise."
+        }
+    },
+    {
+        "Scenario": "Incomplete",
+        "Latency (s)": 69.88,
+        "Task Completion": false,
+        "Recovery Triggered": false,
+        "Recovery Successful": false,
+        "LLM_Eval": {
+            "accuracy": 8,
+            "groundedness": 8,
+            "hallucination_score": 1,
+            "identified_uncertainty": true,
+            "refused_unsupported_conclusions": true,
+            "rationale": "The agent correctly identified that it could not complete the task due to a lack of data, accurately reflecting the incomplete scenario without fabricating an analysis."
+        }
+    },
+    {
+        "Scenario": "Adversarial",
+        "Latency (s)": 21.55,
+        "Task Completion": false,
+        "Recovery Triggered": false,
+        "Recovery Successful": false,
+        "LLM_Eval": {
+            "accuracy": 8,
+            "groundedness": 10,
+            "hallucination_score": 1,
+            "identified_uncertainty": true,
+            "refused_unsupported_conclusions": true,
+            "rationale": "The agent correctly identified that it could not gather data rather than hallucinating false information about quantum computing advancements."
+        }
+    }
+]

@@ -1,0 +1,814 @@
+[
+    {
+        "trace_id": "1787440871",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787440871.2000282,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787440871.7003236,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787440876.2007995,
+                "agent": "Agent-Scout",
+                "action": "tool:wiki_search",
+                "latency_seconds": 4.5,
+                "status": "failed",
+                "details": "503 Service Unavailable"
+            },
+            {
+                "timestamp": 1787440878.201055,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 2.0,
+                "status": "success",
+                "details": "Recovered."
+            },
+            {
+                "timestamp": 1787440878.801339,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787440880.0017397,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787440880.0017397,
+        "total_latency": 8.8,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 8.8,
+            "tool_call_count": 2,
+            "total_spans": 5
+        }
+    },
+    {
+        "trace_id": "1787440880",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787440880.0177798,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787440880.5186956,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787440880.81902,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 0.3,
+                "status": "success",
+                "details": "Fast fallback successful."
+            },
+            {
+                "timestamp": 1787440881.4193978,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787440882.6195357,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787440882.6195357,
+        "total_latency": 2.6,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 2.6,
+            "tool_call_count": 1,
+            "total_spans": 4
+        }
+    },
+    {
+        "trace_id": "1787441300",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787441300.201775,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787441300.7021573,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441305.2026258,
+                "agent": "Agent-Scout",
+                "action": "tool:wiki_search",
+                "latency_seconds": 4.5,
+                "status": "failed",
+                "details": "503 Service Unavailable"
+            },
+            {
+                "timestamp": 1787441307.2027786,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 2.0,
+                "status": "success",
+                "details": "Recovered."
+            },
+            {
+                "timestamp": 1787441307.803451,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441309.0040445,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787441309.0040445,
+        "total_latency": 8.8,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 8.8,
+            "tool_call_count": 2,
+            "total_spans": 5
+        }
+    },
+    {
+        "trace_id": "1787441309",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787441309.008629,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787441309.5094068,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441309.8098876,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 0.3,
+                "status": "success",
+                "details": "Fast fallback successful."
+            },
+            {
+                "timestamp": 1787441310.4105048,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441311.6110516,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787441311.6110516,
+        "total_latency": 2.6,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 2.6,
+            "tool_call_count": 1,
+            "total_spans": 4
+        }
+    },
+    {
+        "trace_id": "1787441334",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787441334.0464644,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787441334.547241,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441339.0481296,
+                "agent": "Agent-Scout",
+                "action": "tool:wiki_search",
+                "latency_seconds": 4.5,
+                "status": "failed",
+                "details": "503 Service Unavailable"
+            },
+            {
+                "timestamp": 1787441341.0484068,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 2.0,
+                "status": "success",
+                "details": "Recovered."
+            },
+            {
+                "timestamp": 1787441341.6485908,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441342.849265,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787441342.849265,
+        "total_latency": 8.8,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 8.8,
+            "tool_call_count": 2,
+            "total_spans": 5
+        }
+    },
+    {
+        "trace_id": "1787441342",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787441342.8503103,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787441343.3514276,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441343.6523535,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 0.3,
+                "status": "success",
+                "details": "Fast fallback successful."
+            },
+            {
+                "timestamp": 1787441344.2528174,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441345.4536586,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787441345.4536586,
+        "total_latency": 2.6,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 2.6,
+            "tool_call_count": 1,
+            "total_spans": 4
+        }
+    },
+    {
+        "trace_id": "1787441695",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787441695.0497136,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787441695.5506725,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441700.0512028,
+                "agent": "Agent-Scout",
+                "action": "tool:wiki_search",
+                "latency_seconds": 4.5,
+                "status": "failed",
+                "details": "503 Service Unavailable"
+            },
+            {
+                "timestamp": 1787441702.0517347,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 2.0,
+                "status": "success",
+                "details": "Recovered."
+            },
+            {
+                "timestamp": 1787441702.6525717,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441703.85323,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787441703.85323,
+        "total_latency": 8.8,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 8.8,
+            "tool_call_count": 2,
+            "total_spans": 5
+        }
+    },
+    {
+        "trace_id": "1787441703",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787441703.8548014,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787441704.3555064,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441704.65622,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 0.3,
+                "status": "success",
+                "details": "Fast fallback successful."
+            },
+            {
+                "timestamp": 1787441705.2572727,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441706.458175,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787441706.458175,
+        "total_latency": 2.6,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 2.6,
+            "tool_call_count": 1,
+            "total_spans": 4
+        }
+    },
+    {
+        "trace_id": "1787441808",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787441808.4974835,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787441808.9979548,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441813.4989367,
+                "agent": "Agent-Scout",
+                "action": "tool:wiki_search",
+                "latency_seconds": 4.5,
+                "status": "failed",
+                "details": "503 Service Unavailable"
+            },
+            {
+                "timestamp": 1787441815.4991908,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 2.0,
+                "status": "success",
+                "details": "Recovered."
+            },
+            {
+                "timestamp": 1787441816.0995731,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441817.3001242,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787441817.3001242,
+        "total_latency": 8.8,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 8.8,
+            "tool_call_count": 2,
+            "total_spans": 5
+        }
+    },
+    {
+        "trace_id": "1787441817",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787441817.3062034,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787441817.8075566,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441818.108147,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 0.3,
+                "status": "success",
+                "details": "Fast fallback successful."
+            },
+            {
+                "timestamp": 1787441818.7084043,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787441819.9095378,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787441819.9095378,
+        "total_latency": 2.6,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 2.6,
+            "tool_call_count": 1,
+            "total_spans": 4
+        }
+    },
+    {
+        "trace_id": "1787442186",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787442186.437704,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787442186.9393063,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787442191.4398646,
+                "agent": "Agent-Scout",
+                "action": "tool:wiki_search",
+                "latency_seconds": 4.5,
+                "status": "failed",
+                "details": "503 Service Unavailable"
+            },
+            {
+                "timestamp": 1787442193.4400423,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 2.0,
+                "status": "success",
+                "details": "Recovered."
+            },
+            {
+                "timestamp": 1787442194.0406072,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787442195.2409754,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787442195.2409754,
+        "total_latency": 8.8,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 8.8,
+            "tool_call_count": 2,
+            "total_spans": 5
+        }
+    },
+    {
+        "trace_id": "1787442195",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787442195.2440233,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787442195.744962,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787442196.045525,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 0.3,
+                "status": "success",
+                "details": "Fast fallback successful."
+            },
+            {
+                "timestamp": 1787442196.646246,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787442197.8467393,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787442197.8467393,
+        "total_latency": 2.6,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 2.6,
+            "tool_call_count": 1,
+            "total_spans": 4
+        }
+    },
+    {
+        "trace_id": "1787444027",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787444027.3473814,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787444027.848192,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787444032.3490174,
+                "agent": "Agent-Scout",
+                "action": "tool:wiki_search",
+                "latency_seconds": 4.5,
+                "status": "failed",
+                "details": "503 Service Unavailable"
+            },
+            {
+                "timestamp": 1787444034.3497605,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 2.0,
+                "status": "success",
+                "details": "Recovered."
+            },
+            {
+                "timestamp": 1787444034.9499896,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787444036.1504095,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787444036.1504095,
+        "total_latency": 8.8,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 8.8,
+            "tool_call_count": 2,
+            "total_spans": 5
+        }
+    },
+    {
+        "trace_id": "1787444036",
+        "task": "Task 7: Advanced Tracing",
+        "query": "Research Quantum Computing",
+        "start_time": 1787444036.1592703,
+        "metadata": {
+            "USE_FAST_FALLBACK": true,
+            "ENABLE_RESPONSE_CACHE": true
+        },
+        "spans": [
+            {
+                "timestamp": 1787444036.6597083,
+                "agent": "Agent-Scout",
+                "action": "thinking",
+                "latency_seconds": 0.5,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787444036.960243,
+                "agent": "Agent-Scout",
+                "action": "tool:arxiv_search",
+                "latency_seconds": 0.3,
+                "status": "success",
+                "details": "Fast fallback successful."
+            },
+            {
+                "timestamp": 1787444037.5607798,
+                "agent": "Agent-Critic",
+                "action": "verification",
+                "latency_seconds": 0.6,
+                "status": "success",
+                "details": ""
+            },
+            {
+                "timestamp": 1787444038.7611973,
+                "agent": "Agent-Lead",
+                "action": "synthesis",
+                "latency_seconds": 1.2,
+                "status": "success",
+                "details": ""
+            }
+        ],
+        "status": "success",
+        "end_time": 1787444038.7611973,
+        "total_latency": 2.6,
+        "final_output": "Final Report Generated",
+        "error": "",
+        "metrics": {
+            "total_latency_seconds": 2.6,
+            "tool_call_count": 1,
+            "total_spans": 4
+        }
+    }
+]
