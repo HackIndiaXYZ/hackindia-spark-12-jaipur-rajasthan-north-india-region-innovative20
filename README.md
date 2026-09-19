@@ -50,63 +50,47 @@ To provide a stunning user experience, Nexus.AI features a custom glassmorphism 
 This section demonstrates the core ReAct reasoning loop, live thought streaming, and the custom cyber-UI built for the agent.
 
 ### 1. Welcome Screen
-![Welcome Screen](welcome.png)
 
 ### 2. Live Agent Reasoning
-![Live Reasoning](reasoning.png)
 
 ### 3. Final Output
-![Result](result.png)
 
 ### 4. FastAPI Backend
-![Backend Terminal](terminal.png)
 
 ## Task 2: External Integrations
 This section demonstrates the integration of multiple external tools and APIs dynamically chosen by the ReAct agent based on the query.
 
 ### 1. Multi-Tool API Selection
-![Tool Selection](task2_1.png)
 
 ### 2. Live Agent Streaming
-![Streaming Reasoning](task2_2.png)
 
 ### 3. Agent Synthesis & UI
-![Agent Synthesis](task2_3.png)
 
 ### 4. Dynamic GitHub API Search
-![Executing External Search](task2_4.png)
 
 ### 5. Final Formatted Report
-![Task Complete Output](task2_5.png)
 
 ## Task 3: Multi-Agent Architecture
 This section demonstrates two specialized agents collaborating. Agent-Scout acts as the researcher gathering raw data using tools, and Agent-Lead acts as the executive synthesizer formulating the final report.
-
-![Multi-Agent Orchestration](task3_1.png)
 
 ## Task 4: Context & Memory Management
 This section demonstrates advanced session-based memory architecture. Nexus.AI dynamically stores short-term conversational context and compresses long-term interactions using an LLM to prevent context-window overflow. The UI features a flashing 'Memory Core' when past data is retrieved.
 
 ### 1. Multi-Turn Conversation UI
-![Multi-Turn Memory](memory_1.png)
 
 ### 2. Contextual Memory Retrieval
-![Memory Retrieval](memory_2.png)
 
 ## Task 5: Agent Framework & Adversarial Testing
 This section demonstrates our custom **NexusGraph** state-machine framework, built as an equivalent to LangGraph to retain bare-metal control over live Server-Sent Events (SSE) streaming and minimize token bloat. NexusGraph achieves full conditional routing, loop detection, and autonomous replanning with zero external dependencies.
 
 ### 1. Chaos Mode (Adversarial Test)
 The UI includes a dedicated Adversarial Test toggle that intentionally sabotages external APIs (simulating 503 errors) to test the agent's resilience.
-![Chaos Mode UI](task5_1.png)
 
 ### 2. Autonomous Replanning & Tool Fallback
 When the primary tool fails, the framework intercepts the error and forces Agent-Scout to dynamically replan and utilize a fallback tool (e.g., switching from Wikipedia to ArXiv).
-![Tool Fallback](task5_2.png)
 
 ### 3. Agent-Critic Hypothesis Verification
 A third agent (Agent-Critic) intercepts the workflow before final synthesis to verify the data, resolve conflicting evidence, and ensure the objective was met.
-![Critic Verification](task5_3.png)
 
 ## Task 6: Evaluation & Metrics
 To satisfy the rigorous testing requirements, we built an automated **LLM-as-a-Judge Evaluation Suite** (`evaluate.py`) that systematically blasts the multi-agent framework with normal, ambiguous, adversarial, contradictory, and incomplete scenarios. 
@@ -156,10 +140,8 @@ Running Scenario: Contradictory
 ```
 
 ### Automated Terminal Execution
-![Automated Evaluation Suite](task6_1.png)
 
 ### Formal Evaluation Criteria
-![Evaluation Criteria Document](task6_2.png)
 
 ## Task 7: Advanced Tracing & Observability
 We built a custom, zero-dependency telemetry engine (`NexusTracer`) in `tracer.py` that tracks end-to-end execution of agents, prompts, decisions, tool calls, and latency.
@@ -198,7 +180,6 @@ The tracing telemetry successfully identified the root cause and autonomously se
 ```
 
 ### Tracing & Self-Healing Terminal Output
-![Task 7 Tracing & Observability](task7.png)
 
 ## Task 8: Production Cloud Deployment
 
@@ -208,8 +189,6 @@ The Nexus AI Research Agent is fully deployed in a production-ready cloud enviro
 👉 **[https://nexus-ai-research-agent-1.onrender.com](https://nexus-ai-research-agent-1.onrender.com)**
 
 ### Cloud Deployment Verification
-![Task 8 Cloud Deployment](task8.png)
-
 
 ## 🏆 HackIndia Spark-12 (In-Person Finals) Features
 During the 36-hour live hackathon sprint, we expanded the core architecture with enterprise-grade capabilities:
