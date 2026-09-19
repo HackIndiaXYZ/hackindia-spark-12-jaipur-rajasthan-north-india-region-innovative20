@@ -217,12 +217,20 @@ During the 36-hour live hackathon sprint, we expanded the core architecture with
 ### 1. Vector Database (Numpy + Gemini Embeddings)
 Standard Vector DBs (ChromaDB, Pinecone) require massive RAM overhead that crashes free-tier cloud instances. We bypassed this by building a custom, mathematically-driven Vector Search Engine using `numpy` and Google's `text-embedding-004` API. 
 * **Drag-and-Drop RAG:** Users can drop a massive PDF into the UI. The backend slices it into chunks, vectorizes the text, and calculates **Cosine Similarity** to instantly retrieve only the relevant paragraphs for the Oracle Agent to synthesize.
+![Drag and Drop Vector RAG](assets/hack_dropzone.png)
 
-### 2. Audio AI (Text-to-Speech)
-Integrated the Web Speech API into the frontend. After the Multi-Agent team finishes a massive research report, the user can click **🔊 Read Aloud**, and the agent will physically read the strategic report to the user in real-time.
+### 2. Multi-Model Engine Routing (Groq LPU & Hugging Face)
+We engineered a dynamic model routing system that allows users to instantly swap the active "Neural Engine." By integrating the **Groq API**, we run open-source models like `Llama-3-70b` on ultra-fast LPUs, achieving inference speeds exceeding 500 tokens per second.
+![Neural Engine Selection](assets/hack_models.png)
 
-### 3. Professional PDF Export Engine
-Integrated `html2pdf.js` directly into the SSE stream closure. With a single click, users can convert the complex markdown report (including dynamically generated Mermaid diagrams and Chart.js graphs) into a branded, downloadable PDF Document.
+### 3. Dynamic UI Rendering & Analysis
+The agents don't just output flat text. When tasked with comparing complex datasets, the agents natively generate markdown tables and executable UI elements directly within the cyber-terminal.
+![Dynamic Markdown Table Rendering](assets/hack_table.png)
 
-### 4. SQLAlchemy Relational Memory
+### 4. Audio AI (TTS) & Professional PDF Exports
+* **Audio AI:** Integrated the Web Speech API into the frontend. After the Multi-Agent team finishes a massive research report, the user can click **🔊 Read Aloud**, and the agent will physically read the strategic report to the user in real-time.
+* **PDF Engine:** Integrated `html2pdf.js` directly into the SSE stream closure. With a single click, users can convert the complex markdown report (including dynamically generated Mermaid diagrams) into a branded, downloadable PDF Document.
+![Export and Audio Features](assets/hack_buttons.png)
+
+### 5. SQLAlchemy Relational Memory
 Replaced the basic JSON storage with a fully relational SQLite database using `SQLAlchemy`, securely logging session IDs, user prompts, and agent responses to persist conversational memory across server restarts.
