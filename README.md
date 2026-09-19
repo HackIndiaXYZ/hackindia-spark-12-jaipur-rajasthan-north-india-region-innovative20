@@ -205,7 +205,7 @@ The tracing telemetry successfully identified the root cause and autonomously se
 The Nexus AI Research Agent is fully deployed in a production-ready cloud environment on Render. It dynamically binds to ports and is fully integrated with Google's latest Gemini models.
 
 ### Production Live URL:
-👉 **[https://nexus-ai-research-agent.onrender.com](https://nexus-ai-research-agent.onrender.com)**
+👉 **[https://nexus-ai-research-agent-1.onrender.com](https://nexus-ai-research-agent-1.onrender.com)**
 
 ### Cloud Deployment Verification
 ![Task 8 Cloud Deployment](task8.png)
