@@ -1527,11 +1527,69 @@ html_content = """\n<!DOCTYPE html>
                     htmlContent = htmlContent.replace(/<pre><code class="language-mermaid">([\\s\\S]*?)<\/code><\/pre>/g, '<div class="mermaid">$1</div>');
                     markdownContainer.innerHTML = htmlContent;
                     
+                                        // Action Buttons Container
+                    const actionContainer = document.createElement('div');
+                    actionContainer.style.display = 'flex';
+                    actionContainer.style.gap = '10px';
+                    actionContainer.style.marginTop = '15px';
+
+                    // MD Export Button
                     const exportBtn = document.createElement('button');
                     exportBtn.className = 'export-btn';
-                    exportBtn.innerHTML = '📥 Export Mission Report';
+                    exportBtn.innerHTML = '📄 MD';
+                    exportBtn.title = "Download Markdown";
                     exportBtn.onclick = () => downloadReport(data.text);
-                    markdownContainer.appendChild(exportBtn);
+                    actionContainer.appendChild(exportBtn);
+
+                    // PDF Export Button
+                    const pdfBtn = document.createElement('button');
+                    pdfBtn.className = 'export-btn';
+                    pdfBtn.innerHTML = '📊 PDF';
+                    pdfBtn.title = "Download PDF";
+                    pdfBtn.style.background = 'linear-gradient(45deg, #cc0000, #ff3333)';
+                    pdfBtn.onclick = () => {
+                        const opt = {
+                          margin:       10,
+                          filename:     'Nexus_Mission_Report.pdf',
+                          image:        { type: 'jpeg', quality: 0.98 },
+                          html2canvas:  { scale: 2 },
+                          jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                        };
+                        html2pdf().set(opt).from(markdownContainer).save();
+                    };
+                    actionContainer.appendChild(pdfBtn);
+
+                    // Text-To-Speech Audio Button
+                    const audioBtn = document.createElement('button');
+                    audioBtn.className = 'export-btn';
+                    audioBtn.innerHTML = '🔊 Read Aloud';
+                    audioBtn.title = "Play AI Voice";
+                    audioBtn.style.background = 'linear-gradient(45deg, #0088cc, #00bbff)';
+                    let isPlaying = false;
+                    audioBtn.onclick = () => {
+                        if (isPlaying) {
+                            window.speechSynthesis.cancel();
+                            audioBtn.innerHTML = '🔊 Read Aloud';
+                            isPlaying = false;
+                        } else {
+                            // Strip HTML tags and markdown for reading
+                            const strippedText = data.text.replace(/<[^>]*>?/gm, '').replace(/#/g, '').replace(/\*/g, '');
+                            const utterance = new SpeechSynthesisUtterance(strippedText);
+                            utterance.lang = 'en-US';
+                            utterance.rate = 1.05;
+                            window.speechSynthesis.speak(utterance);
+                            audioBtn.innerHTML = '⏹ Stop Reading';
+                            isPlaying = true;
+                            
+                            utterance.onend = () => {
+                                audioBtn.innerHTML = '🔊 Read Aloud';
+                                isPlaying = false;
+                            };
+                        }
+                    };
+                    actionContainer.appendChild(audioBtn);
+
+                    markdownContainer.appendChild(actionContainer);
                     
                     addCodeCopyButtons(agentRow);
                     
